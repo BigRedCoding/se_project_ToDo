@@ -72,6 +72,14 @@ class FormValidator {
     });
     this._setEventListeners();
   }
+
+  resetValidation() {
+    document.querySelector(this._submitButtonSelector).disabled = true;
+    this._inputElements = document.querySelectorAll(this._inputSelector);
+    this._inputElements.forEach((element) => {
+      element.form.reset();
+    });
+  }
 }
 
 export default FormValidator;
