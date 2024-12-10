@@ -46,11 +46,11 @@ class Todo {
         }
       )}`;
     }
+
     this._generateCheckboxEl();
     this._setEventListeners();
 
     return this._todoElement;
   }
 }
-
 export default Todo;

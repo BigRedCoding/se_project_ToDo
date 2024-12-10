@@ -4,7 +4,7 @@ class FormValidator {
     this._submitButtonSelector = settings.submitButtonSelector;
     this._errorClass = settings.errorClass;
     this._inputErrorClass = settings.inputErrorClass;
-    this._inactiveButton = settings.ClassinactiveButtonClass;
+    this._inactiveButton = settings.inactiveButtonClass;
     this._formEl = formEl;
   }
 
@@ -74,11 +74,8 @@ class FormValidator {
   }
 
   resetValidation() {
-    document.querySelector(this._submitButtonSelector).disabled = true;
-    this._inputElements = document.querySelectorAll(this._inputSelector);
-    this._inputElements.forEach((element) => {
-      element.form.reset();
-    });
+    this._formEl.reset();
+    this._toggleButtonState();
   }
 }
 
