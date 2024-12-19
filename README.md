@@ -8,7 +8,7 @@
 
 ### The date can either be typed via the standard MM/DD/YYYY format or clicking an icon that brings a calendar visible. The calendar is formatted in a way that the user can click the specific day in the specific year, and there's a few ways this can be done including clicking a button labeled "today".
 
-### The logo also adjusts it's position based on the user's display. The "+Add Todo" button adjusts it's position as well accordingly. Also, the "delete" display changes from text to an icon.
+### The logo also adjusts it's position based on the user's display. The "+Add Todo" button adjusts it's position as well accordingly. Also, the "delete" display changes from text to an icon. The list now shows the total number of "todo" items as well as the number of items checked off as "completed." This adjusts based on adding or deleting "todo" items and if those items were checked off or not.
 
 ## Technology
 
